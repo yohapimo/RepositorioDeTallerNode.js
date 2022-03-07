@@ -1,0 +1,42 @@
+//- extends layout
+
+//- block content
+//-   h1= title
+//-   p Welcome to #{title}
+
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Taller - Node.js
+    link(rel='stylesheet' href='css/style.css')
+    body
+    h1 Taller - Node.js 
+    p REGISTER GAME
+    form(action='/localhost:8080/createGame' method='post')
+    
+    label(for='team_name') ID : 
+    input#team_name(type='text' name ='name_field' placeholder='ID')
+    br
+    br
+    label(for='team_name') TYPE : 
+    input#team_name(type='text' name ='name_field' value='')
+    br
+    br
+    label(for='team_name') GAMERS : 
+    input#team_name(type='text' name ='name_field' placeholder='gamer 1')
+    br
+    br
+    label(for='team_name') GAMERS : 
+    input#team_name(type='text' name ='name_field' placeholder='gamer 2')
+    br
+    br
+    label(for='team_name') GAMERS : 
+    input#team_name(type='text' name ='name_field' placeholder='gamer 3')
+    br
+    br
+    <input  type="submit" value="OK">
+
